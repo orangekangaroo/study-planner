@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Goal Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="study_planner.html">Study Planner</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Track Your Goals</h2>
+            <form id="goalForm">
+                <label for="goalName">Goal Name:</label>
+                <input type="text" id="goalName" required>
+
+                <label for="goalDeadline">Deadline:</label>
+                <input type="date" id="goalDeadline" required>
+
+                <label for="goalStatus">Status:</label>
+                <select id="goalStatus" required>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+
+                <button type="submit">Add Goal</button>
+            </form>
+        </section>
+
+        <section id="goalListSection">
+            <h2>Your Goals</h2>
+            <ul id="goalList">
+                <!-- Goals will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section id="progressSection">
+            <h2>Progress</h2>
+            <div class="progress-bar-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <p id="progressText">Progress: 0%</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyStudyLife+</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

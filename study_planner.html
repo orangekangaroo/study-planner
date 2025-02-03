@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Study Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="goal_tracker.html">Goal Tracker</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Create Your Study Plan</h2>
+            <form id="studyPlanForm">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" required>
+
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" required>
+
+                <label for="priority">Priority:</label>
+                <select id="priority" required>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <button type="submit">Add Plan</button>
+            </form>
+        </section>
+
+        <section id="studyPlansSection">
+            <h2>Your Study Plans</h2>
+            <ul id="studyPlansList">
+                <!-- Study plans will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyStudyLife+</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
